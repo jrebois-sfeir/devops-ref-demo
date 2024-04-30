@@ -4,5 +4,8 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-  "remoteUser": "node"
+"remoteUser": "node",
+"features": {
+	"ghcr.io/devcontainers-community/npm-features/typescript:1": {}
+}
 }
