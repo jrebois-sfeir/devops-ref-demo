@@ -1,7 +1,10 @@
 FROM node:22
 
 # Install basic development tools
-RUN apt update && apt install -y less man-db sudo
+RUN apt update && apt install -y less man-db sudo locales
+
+# Setup local language
+RUN locale-gen en_US.UTF-8
 
 # Ensure default `node` user has access to `sudo`
 ARG USERNAME=node
